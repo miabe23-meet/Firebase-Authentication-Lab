@@ -13,10 +13,11 @@ config= {
   "storageBucket": "fir-cfa5b.appspot.com",
   "messagingSenderId": "949101888347",
   "appId": "1:949101888347:web:2cfb886b3e4e9e5250907e",
-  "measurementId": "G-Z6G20GVL9W"
+  "measurementId": "G-Z6G20GVL9W",
+  "databaseURL": ""
 }
 
-firebase=pyrebase.initializes_app(config)
+firebase=pyrebase.initialize_app(config)
 auth=firebase.auth()
 
 @app.route('/', methods=['GET', 'POST'])
