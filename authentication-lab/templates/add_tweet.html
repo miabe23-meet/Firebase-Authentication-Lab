@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add Tweet</title>
 </head>
 <body>
-    Great Job!
+    <form method="post" action="/add_tweet">
+        <!-- Heading -->
+        <h4>
+            Add a Tweet !
+        </h4>
+
+        <div>
+            <label>title</label>
+            <div class="input-group">
+                <input type="title"  name="title" minlength="6">
+            </div>
+        </div>
+
+        <div>
+            <label>text</label>
+            <div class="input-group">
+                <input type="text"  name="text" minlength="280">
+            </div>
+        </div>
+
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
 </body>
 </html>
