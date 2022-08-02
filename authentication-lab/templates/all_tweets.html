@@ -7,7 +7,9 @@
 <h1>Here is ALL of our tweets !</h1>
 <body>
     {% for tweet in tweets %}
-    <h1>{{tweets[tweet]}}</h1>
+    <h1>{{tweets[tweet]['title']}}</h1>
+    <h1>{{tweets[tweet]['text']}}</h1>
+    
 
     {%endfor%}
 </body>
